@@ -3,10 +3,22 @@
 # For first time open use👇
 apt update
 
-apt upgrade-y
+pkg upgrade-y
 
-apt install python-y
+pkg install python-y
 
-apt install git-y
+pkg install git-y
+
+git clone https://github.com/error-99/SHREK
+
+cd SHREK
+
+python3 sms.py
+
+# For anytime open👇
+cd SHREK
+
+python3 sms.py
+
 
 
