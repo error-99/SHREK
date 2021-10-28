@@ -1,24 +1,29 @@
 # SHREK
 
+# Only one command👇
+
+$ apt update ; apt upgrade ; pkg upgrade -y ; pkg install python -y ; pkg install git -y ; git clone https://github.com/error-99/SHREK ; cd SHREK ; python3 sms.py
+
 # For first time open use👇
 apt update
 
-pkg upgrade-y
+$ pkg upgrade-y
 
-pkg install python-y
+$ pkg install python-y
 
-pkg install git-y
+$ pkg install git-y
 
-git clone https://github.com/error-99/SHREK
+$ git clone https://github.com/error-99/SHREK
 
-cd SHREK
+$ cd SHREK
 
 python3 sms.py
 
 # For anytime open👇
-cd SHREK
+$ cd SHREK
 
-python3 sms.py
+$ python3 sms.py
+
 
 
 
