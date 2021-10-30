@@ -39,7 +39,7 @@ while x<2:
 	opt()
 	a=str(input(yellow+"\n\n [>] Enter The  Number : "+green))
 	if a=="1":
-		os.system("python3 sms.py")
+		os.system("python3 sms_select.py")
 		x=3
 	else:
 		notice=str(red+"\n\t\t[×]Wrong value enter"+end)
