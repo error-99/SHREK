@@ -1,5 +1,9 @@
+
 import os
+import requests
+os.system("pip install requests")
 import time
+from requests.structures import CaseInsensitiveDict
 #CVALUE
 blue= '\33[94m'
 lightblue = '\033[94m'
