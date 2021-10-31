@@ -24,7 +24,7 @@ logo=red+str("""        ███████╗██╗  ██╗████
       
  #HEADER                
 text="\t\t"+cyan+"Developed By:Shabbir Rahman\n" 
-version=red+"\t\t     version.txt"
+version=red+"\t\t     1.1.0"
 notice=""    
 def opt():
 	print(blue+"\n==> Select Your Option From Below"+end)
@@ -46,7 +46,7 @@ mainversion=requests.get("https://raw.githubusercontent.com/error-99/SHREK/main/
 time.sleep(0.6)
 
 if(mversion.read() ==mainversion.text):
-	print(cyan+"You are using the latest version of SH-BOMB")
+	print("No update found")
 else:
 	os.system("clear")
 	header()
