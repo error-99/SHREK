@@ -24,7 +24,7 @@ logo=red+str("""        ███████╗██╗  ██╗████
       
  #HEADER                
 text="\t\t"+cyan+"Developed By:Shabbir Rahman\n" 
-version=red+"\t\t     version 1.1.0 "
+version=red+"\t\t     version.txt"
 notice=""    
 def opt():
 	print(blue+"\n==> Select Your Option From Below"+end)
