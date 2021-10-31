@@ -55,7 +55,7 @@ else:
 	os.system("clear")
 	header()
 	print(blue+"\n\t\tUpdating Tool...")
-	os.system("cd .. && rm -rf SH-BOMB && git clone https://github.com/error-99/SHREK> /dev/null 2>&1 && cd SHREK && python main.py")
+	os.system("cd && rm -rf SH-BOMB && git clone https://github.com/error-99/SHREK && cd SHREK && python main.py")
 #main
 
 x=1
