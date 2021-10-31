@@ -59,7 +59,7 @@ elif update=="1.1.1":
 	os.system("clear")
 	header()
 	print(red+"\n\t\t [*]Updating tools...wait"+end)
-	
-os.system("rm -rf SHREK &&git clone https://github.com/error-99/SHREK ; cd SHREK ; python3 main.py")
+	os.system("rm -rf SHREK")
+        os.system("git clone https://github.com/error-99/SHREK ; cd SHREK ; python3 main.py")
 
 		
