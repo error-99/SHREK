@@ -62,7 +62,7 @@ x=1
 while x<2:
 	os.system("clear")
 	header()
-	print(green+ "\n\t\t [√]Update successfully  ")
+	print(green+ "\t\t [√]Update successfully  ")
 	time.sleep(1)
 	opt()
 	a=str(input(yellow+"\n\n [>] Enter The  Number : "+green))
