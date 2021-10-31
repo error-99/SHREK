@@ -1,7 +1,4 @@
-
 import os
-import requests
-os.system("pip install requests")
 import time
 import requests
 from requests.structures import CaseInsensitiveDict
@@ -51,10 +48,15 @@ time.sleep(0.6)
 if(mversion.read() ==mainversion.text):
 	print(cyan+"You are using the latest version of SH-BOMB")
 else:
-	print(red+"\t\t[✓]Tool Update Found")
+	os.system("clear")
+	header()
+	print(red+"\t\t[✓] Update Found")
 	time.sleep(1)
+	os.system("clear")
+	header()
 	print(blue+"\n\t\tUpdating Tool...")
 	os.system("cd .. && rm -rf SH-BOMB && git clone https://github.com/error-99/SHREK> /dev/null 2>&1 && cd SHREK && python main.py")
+#main
 
 x=1
 while x<2:
