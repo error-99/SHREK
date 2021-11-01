@@ -28,7 +28,7 @@ version=red+"\t\t     1.1.0"
 notice=""    
 def opt():
 	print(blue+"\n==> Select Your Option From Below"+end)
-	print(cyan+"\n\n\t\t[1]Sms bombing"+end)
+	print(cyan+"\n\n\t\t[1]Sms bombing\n\t\t[2]E-mail bombing"+end)
 
 def header():
 	print(logo)
@@ -47,6 +47,7 @@ time.sleep(0.6)
 
 if(mversion.read() ==mainversion.text):
 	print("No update found")
+	pass
 else:
 	os.system("clear")
 	header()
@@ -55,7 +56,7 @@ else:
 	os.system("clear")
 	header()
 	print(blue+"\n\t\tUpdating Tool...")
-	os.system("cd && rm -rf SH-BOMB && git clone https://github.com/error-99/SHREK && cd SHREK && python main.py")
+	os.system("cd && rm -rf SHREK && git clone https://github.com/error-99/SHREK && cd SHREK && python main.py")
 #main
 
 x=1
@@ -69,5 +70,7 @@ while x<2:
 	if a=="1":
 		os.system("python3 sms_select.py")
 		x=3
+	elif a=="2":
+		os.system("python3 e-mail.py")
 	else:
 		notice=str(red+"\n\t\t[×]Wrong value enter"+end)
