@@ -28,7 +28,7 @@ version="1.1.0"
 notice=""    
 def opt():
 	print(blue+"\n==> Select Your Option From Below"+end)
-	print(cyan+"\n\n\t\t[1]Sms bombing\n\t\t[2]E-mail bombing"+end)
+	print(cyan+"\n\n\t\t[1]Sms bombing\n\n\t\t[2]E-mail bombing"+end)
 
 def header():
 	print(logo)
@@ -48,15 +48,26 @@ if upchck==version:
 	pass
 else:
 	os.system("clear")
-	time.sleep(2)
 	header()
-	print(red+"\t\t[✓] Update Found")
-	time.sleep(3)
+	print(red+"\t\t[✓] Update Found ")
+	time.sleep(1)
+	print(blue+"\n\t\tUpdating Tool...")
+	os.system("pip install requests")
+	os.system("cd .. && rm -rf SH-BOMB &&  git clone https://github.com/error-99/SHREK > /dev/null 2>&1 && cd SHREK  && python main.py")
+
+x=1
+while x<2:
 	os.system("clear")
 	header()
-	print(blue+"\n\t\tUpdating Tool...")
-	os.system("cd && rm -rf SHREK")
-	os.system("pip install requests")
-	os.system(" git clone https://github.com/error-99/SHREK")
-	os.system("cd SHREK")
-	os.system("python3 main.py")
+	time.sleep(1)
+	opt()
+	a=str(input(yellow+"\n\n [>] Enter The  Number : "+green))
+	if a=="1":
+		os.system("python3 sms_select.py")
+		x=3
+	elif a=="2":
+		os.system("python3 e-mail.py")
+	else:
+		notice=str(red+"\n\t\t[×]Wrong value enter"+end)
+
+
