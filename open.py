@@ -24,7 +24,7 @@ logo=red+str("""        ███████╗██╗  ██╗████
       
  #HEADER                
 text="\t\t"+cyan+"Developed By:Shabbir Rahman\n" 
-version=red+"\t\t     1.1.0"
+version="1.1.0"
 notice=""    
 def opt():
 	print(blue+"\n==> Select Your Option From Below"+end)
@@ -41,22 +41,21 @@ os.system("clear")
 header()
 print(green+"\t\t[•]Checking For Updates...")
 time.sleep(3)
-mversion=open('version.txt')
-mainversion=requests.get("https://raw.githubusercontent.com/error-99/SHREK/main/.version.txt")
+r=requests.get("https://pastebin.com/raw/SEA7vpH3")
 time.sleep(0.6)
 
-if(mversion.read() ==mainversion.text):
-	print("No update found")
+upchck=r.text
+if upchck==version:
 	pass
 else:
 	os.system("clear")
 	header()
 	print(red+"\t\t[✓] Update Found")
-	time.sleep(1)
+	time.sleep(3)
 	os.system("clear")
 	header()
 	print(blue+"\n\t\tUpdating Tool...")
-	os.system("cd && rm -rf SHREK && git clone https://github.com/error-99/SHREK && cd SHREK && python main.py")
+	os.system("cd.. && rm -rf SHREK && git clone https://github.com/error-99/SHREK && cd SHREK && python main.py")
 #main
 
 x=1
