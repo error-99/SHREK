@@ -28,7 +28,7 @@ version="1.1.0"
 notice=""    
 def opt():
 	print(blue+"\n==> Select Your Option From Below"+end)
-	print(cyan+"\n\n\t\t[1]Sms bombing\n\t\t[2]E-mail bombing"+end)
+	print(cyan+"\n\n\t\t[1]Sms bombing\n\n\t\t[2]E-mail bombing"+end)
 
 def header():
 	print(logo)
