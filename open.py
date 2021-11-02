@@ -53,7 +53,7 @@ else:
 	time.sleep(1)
 	print(blue+"\n\t\tUpdating Tool...")
 	os.system("pip install requests")
-	os.system("cd .. && rm -rf SH-BOMB &&  git clone https://github.com/error-99/SHREK > /dev/null 2>&1 && cd SHREK  && python main.py")
+	os.system("cd .. && rm -rf SHREK &&  git clone https://github.com/error-99/SHREK > /dev/null 2>&1 && cd SHREK  && python main.py")
 
 x=1
 while x<2:
