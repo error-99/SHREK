@@ -33,14 +33,13 @@ def opt():
 def header():
 	print(logo)
 	print(text)
-	print(version)
 	print(line)
 	print(notice)
 #main
 os.system("clear")
 header()
-print(green+"\t\t[•]Checking For Updates...")
-time.sleep(3)
+print(green+"\n\t\t[•]Checking For Updates...")
+time.sleep(0)
 r=requests.get("https://pastebin.com/raw/SEA7vpH3")
 time.sleep(0.6)
 
@@ -49,6 +48,7 @@ if upchck==version:
 	pass
 else:
 	os.system("clear")
+	time.sleep(2)
 	header()
 	print(red+"\t\t[✓] Update Found")
 	time.sleep(3)
@@ -62,7 +62,7 @@ x=1
 while x<2:
 	os.system("clear")
 	header()
-	print(green+ "\t\t [√]No update found  ")
+	print(green+ "\t\t [√]No update found ")
 	time.sleep(1)
 	opt()
 	a=str(input(yellow+"\n\n [>] Enter The  Number : "+green))
